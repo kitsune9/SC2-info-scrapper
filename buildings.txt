@@ -1,0 +1,50 @@
+Pylon
+    Assimilator
+    Gateway
+    Forge
+    Cybernetics Core
+    Photon Cannon
+    Robotics Facility
+    Warp Gate
+    Stargate
+    Twilight Council
+    Robotics Bay
+    Fleet Beacon
+    Templar Archives
+    Dark Shrine
+     Command Center
+        Planetary Fortress
+        Orbital Command
+    Supply Depot
+    Refinery
+    Barracks
+    Engineering Bay
+    Bunker
+    Sensor Tower
+    Missile Turret
+    Factory
+    Ghost Academy
+    Starport
+    Armory
+    Fusion Core
+    Tech Lab
+    Reactor
+     Hatchery
+    Spine Crawler
+    Spore Crawler
+    Extractor
+    Spawning Pool
+    Evolution Chamber
+    Roach Warren
+    Baneling Nest
+    Creep Tumor
+    Lair
+    Hydralisk Den
+    Lurker Den
+    Infestation Pit
+    Spire
+    Nydus Network
+    Hive
+    Greater Spire
+    Ultralisk Cavern
+

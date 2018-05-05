@@ -1,0 +1,60 @@
+Archon
+carrier
+colossus
+dark templar
+high templar
+immortal
+mothership
+observer
+phoenix
+probe
+sentry
+stalker
+void ray
+waarp prism
+zealot
+oracle
+tempest
+adept
+disruptor
+scv
+mule
+marine
+marauder
+reaper
+ghost
+hellion
+hellbat
+siege tank
+cyclone
+widow mine
+thor
+viking
+medivac
+liberator
+raven
+banshee
+battlecruiser
+larva
+cocoon
+drone
+queen
+zergling
+baneling
+roach
+ravager
+hydralisk
+lurker
+infestor
+swarm host
+ultralisk
+locust
+broodling
+changeling
+infested terran
+overlord
+overseer
+mutalisk
+corruptor
+brood lord
+viper

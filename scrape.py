@@ -6,45 +6,84 @@ from urllib.request import urlopen
 
 
 
-
-
-def writeResults(txt):
-    txt = txt.strip()
-
-    txt = str(lineCounter) + "     " + txt
-    textFile.write(txt)
-
-textFile = open("textFile.txt", 'w')
-lineCounter = 0
-
-urlList = ["http://liquipedia.net/starcraft2/Marine_(Legacy_of_the_Void)",
-           "http://liquipedia.net/starcraft2/Banshee_(Legacy_of_the_Void)",
-           "http://liquipedia.net/starcraft2/Bunker_(Legacy_of_the_Void)",
-           "http://liquipedia.net/starcraft2/Starport_(Legacy_of_the_Void)"]
-
-for urlAddress in urlList:
-    page = urlopen(urlAddress)
+def handleUnitPage(address):
+    page = urlopen(address)
     print("######################################################")
+    textFile.write("######################################################\n")
     i = 0
-
-
+    count = 0
 
     soup = BeautifulSoup(page, 'html.parser')
 
+
+    #############
+    # unit name
+    print(soup.find(id="firstHeading").contents[1].get_text())
+    textFile.write(soup.find(id="firstHeading").contents[1].get_text() + "\n")
+
     name_box = soup.findAll("div", attrs="infobox-cell-2")
+
+
+
+    ##########
+    # line writer
     for name in name_box:
-        i += 1
+        writeResults(name.text, count)
+        count += 1
 
-    for number in range(0, i):
-        writeResults(name_box[number].text)
+def handleBuildingPage(address):
+    page = urlopen(address)
+    print("######################################################")
+    textFile.write("######################################################\n")
+    i = 0
+    count = 0
+
+    soup = BeautifulSoup(page, 'html.parser')
+    print(soup.find(id="firstHeading").contents[1].get_text())
+    textFile.write(soup.find(id="firstHeading").contents[1].get_text() + "\n")
+
+    name_box = soup.findAll("div", attrs="infobox-cell-2")
+
+    ##########
+    # line writer
+    for name in name_box:
+        writeResults(name.text, count)
+        count += 1
+        if(count > 3):
+            break
+
+def writeResults(txt, lineCounter):
+    txt = txt.strip()
+
+    txt = str(lineCounter) + "     " + txt + "\n"
+    textFile.write(txt)
+
+
+textFile = open("textFile.txt", 'w')
+
+
+unitUrlList = open("unitUrls.txt", 'r')
+buildingUrlList = open("buildingUrls.txt", 'r')
 
 
 
-#textFile.write(soup.get_text())
+for urlAddress in unitUrlList:
+    handleUnitPage(urlAddress)
+
+for urlAddress in buildingUrlList:
+    handleBuildingPage(urlAddress)
+
+print()
+print()
+print("######################################################")
+print("######################################################")
+print("  SUCCESS")
+print("######################################################")
+print("######################################################")
 
 
-
-
+unitUrlList.close()
+buildingUrlList.close()
 textFile.close()
 
 

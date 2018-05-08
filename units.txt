@@ -1,8 +1,8 @@
 Archon
 carrier
 colossus
-dark templar
-high templar
+dark Templar
+high Templar
 immortal
 mothership
 observer
@@ -10,24 +10,24 @@ phoenix
 probe
 sentry
 stalker
-void ray
-waarp prism
+void Ray
+warp Prism
 zealot
 oracle
 tempest
 adept
 disruptor
-scv
-mule
+SCV
+MULE
 marine
 marauder
 reaper
 ghost
 hellion
 hellbat
-siege tank
+siege Tank
 cyclone
-widow mine
+widow Mine
 thor
 viking
 medivac
@@ -46,15 +46,15 @@ ravager
 hydralisk
 lurker
 infestor
-swarm host
+swarm Host
 ultralisk
 locust
 broodling
 changeling
-infested terran
+infested Terran
 overlord
 overseer
 mutalisk
 corruptor
-brood lord
+brood Lord
 viper

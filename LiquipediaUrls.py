@@ -40,7 +40,7 @@ for line in unitInput:
     unitName = "_".join(unitName.split(" "))
 
 
-    str = "http://liquipedia.net/starcraft2/" + unitName + "_(Legacy_of_the_Void)\n"
+    str = "http://liquipedia.net/starcraft2/" + unitName + "\n" # "_(Legacy_of_the_Void)\n"
     unitOutput.write(str)
 
 
